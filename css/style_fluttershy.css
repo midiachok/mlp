@@ -1,0 +1,116 @@
+header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: none; 
+  z-index: 1000;
+}
+
+header img {
+  display: block; /* Прибирає нижній відступ, який буває у inline-елементів */
+  width: 100%;
+  height: auto;
+  max-height: 90px; 
+}
+
+  .text_aside{
+    margin-top:10%;
+  }
+  
+  aside {
+    margin-top:3.75%;
+    background-image:url(../images/aside_fluttershy.png);
+   
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 15%;
+    height: 71%;
+    border-radius:12px;
+  }
+
+  button {
+    background-color: #fff4b6; /* Ніжний рожевий */
+    border: none;
+    color: #440035; /* Темно-фіолетовий текст */
+    padding: 10px 20px;
+    margin: 2%;
+    font-size: 100%;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex; /* робимо кнопку гнучким контейнером */
+  align-items: center; /* вирівнюємо текст вертикально по центру */
+  justify-content: center; /* вирівнюємо текст горизонтально по центру */
+  text-align: center;
+  width: 96%; /* твоя ширина */
+  height: 7%; /* твоя висота */
+  }
+  
+  button:hover {
+    background-color: #d63bb5; /* Світло-фіолетовий при наведенні */
+    transform: scale(1.05);
+  }
+  
+  button a {
+    align-self: center;
+    text-decoration: none;
+    color: inherit; /* Залишаємо колір тексту як у кнопки */
+    display: block; /* Щоб весь текст у кнопці клікався */
+  }
+
+  body{
+    padding-top:5%;
+    background-color: rgb(254,247,175);
+  }
+  main {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20%;
+    margin-right: 2%;
+
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  form input, form button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+  }
+
+  form {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10%;
+    padding:10%;
+  }
+
+  .text-container p {
+    font-size:20px;
+    text-align: justify;
+    margin-bottom: 2%;
+  }
+
+  .text-container {
+    width: 65%;
+  }
+
+  .image1{
+    float: right;         
+    margin: 0 0 1em 1em;  /* зверху 0, праворуч 0, знизу 1em, зліва 1em */
+    width: 200px;         
+    height: auto;
+  }
+  .image2{
+    float: left;         
+    margin: 0 1em 1em 0;  /* зверху 0, праворуч 0, знизу 1em, зліва 1em */
+    width: 200px;         
+    height: auto;
+  }

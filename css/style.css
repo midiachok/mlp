@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image:url(../images/fonn.jpg);
+  }
+  
+  /* Виправлення для header */
+  header {
+    position: fixed; /* Залишається "прилиплим" до верху */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: none; /* Прибрати білий фон */
+    z-index: 1000;
+  }
+  
+  header img {
+    display: block; /* Прибирає нижній відступ, який буває у inline-елементів */
+    width: 100%;
+    height: auto;
+    max-height: 90px; /* Можеш змінити або прибрати, якщо хочеш повну висоту */
+  }
+
+  .site-header {
+    background: linear-gradient(90deg, #ffccff, #ccffff);
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .site-title {
+    font-size: 3rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #9933cc;
+    text-shadow: 2px 2px #ffffff;
+    margin: 0;
+  }
+
+  .text_aside{
+    margin-top:10%;
+  }
+  
+  aside {
+    margin-top:7.25%;
+    background-image:url(../images/aside_main.png);
+   
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 15%;
+    height: 82%;
+    border-radius: 12px;
+  }
+
+  aside ul{
+    list-style-type:  none;
+    font-size:25px;
+  }
+
+
+  main {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20%;
+    margin-right: 2%;
+
+    padding: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  form input, form button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+  }
+
+  form {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10%;
+    padding:10%;
+  }
+
+  .text-container p {
+    font-size:20px;
+    text-align: justify;
+    margin-bottom: 2%;
+  }
+
+  .text-container {
+    width: 65%;
+  }
+
+
+  .video1{
+    position:absolute;
+    margin-left:73%;
+    margin-top:30%;
+
+  }
+
+  .image1{
+    width: 247px;         /* або % */
+    height: auto;
+  }
+
+  button {
+    background-image:url(../images/aside_rainbow.png);
+    border: none;
+    color: #000000; /* Білий текст */
+    /*color: #820000; /* Темно-фіолетовий текст */
+    padding: 10px 20px;
+    margin: 2%;
+    font-size: 100%;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex; /* робимо кнопку гнучким контейнером */
+  align-items: center; /* вирівнюємо текст вертикально по центру */
+  justify-content: center; /* вирівнюємо текст горизонтально по центру */
+  text-align: center;
+  width: 96%; /* твоя ширина */
+  height: 7%; /* твоя висота */
+  }
+  
+  button:hover {
+    background-image:url(../images/aside_rainbow1.png); /* Світло-фіолетовий при наведенні */
+    transform: scale(1.05);
+  }
+  
+  button a {
+    align-self: center;
+    text-decoration: none;
+    margin-bottom:16%;
+    color: inherit; /* Залишаємо колір тексту як у кнопки */
+    display: block; /* Щоб весь текст у кнопці клікався */
+  }
+
+  .image2{
+    border-radius: 12px;
+    float: right;         /* або left */
+    margin: 0 0 1em 1em;  /* зверху 0, праворуч 0, знизу 1em, зліва 1em */
+    width: 200px;         /* або % */
+    height: auto;
+  }
+  .image3{
+    border-radius: 12px;
+    float: left;         /* або left */
+    margin: 0 1em 1em 0;  /* зверху 0, праворуч 0, знизу 1em, зліва 1em */
+    width: 200px;         /* або % */
+    height: auto;
+  }
